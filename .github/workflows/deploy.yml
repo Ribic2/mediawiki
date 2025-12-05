@@ -3,7 +3,7 @@ name: Deploy to Production
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -26,4 +26,4 @@ jobs:
             # composer install --no-dev
             # php maintenance/update.php --quick
             # sudo systemctl restart php-fpm
-            echo "Deployment completed successfully!"
+            echo "Deployment completed successfully! :D"
