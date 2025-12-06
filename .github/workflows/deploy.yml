@@ -21,9 +21,5 @@ jobs:
           script: |
             cd ${{ secrets.PROJECT_PATH }}
             git pull origin main
-            # Add any additional deployment commands here
-            # Examples:
-            # composer install --no-dev
-            # php maintenance/update.php --quick
-            # sudo systemctl restart php-fpm
+            composer install --no-dev
             echo "Deployment completed successfully! :D"
